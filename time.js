@@ -4,7 +4,7 @@ async function getWeatherForecast(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
     
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch;
         const data = await response.json();
         return data;
     } catch (error) {
